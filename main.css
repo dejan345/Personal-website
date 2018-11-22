@@ -196,16 +196,87 @@ template {
 }
 
 /* ==========================================================================
+    Fonts
+    ========================================================================== */
+
+/* @import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700"); */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Serif+Pro:400,700");
+
+/* ==========================================================================
    Custom styles
    ========================================================================== */
 
 body {
   background-color: #1c1c23;
+  background-image: url("/images/noisy-texture3.png");
   color: #e0e0e0;
 }
 
 h1 {
   color: #f9d05c;
+  font-weight: 400;
+  font-family: "Source Serif Pro", serif;
+}
+
+p {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+/* ==========================================================================
+    Home page
+    ========================================================================== */
+
+.hello {
+  font-size: 3.5rem;
+}
+
+nav .navigation {
+  color: #f9d05c;
+}
+/* Large */
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: flex-end;
+}
+
+.navigation ul li {
+  padding-left: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.navigation ul li a {
+  color: #f9d05c;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navigation ul li a:active {
+  color: #f9d05c;
+  text-transform: uppercase;
+  border-bottom: 5px solid #f9d05c;
+  text-decoration: #f9d05c;
+  background-color: #e0e0e0 !important;
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .navigation ul {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .navigation ul {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
 }
 
 /* ==========================================================================
