@@ -1,3 +1,5 @@
+/* #region */
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -194,7 +196,7 @@ template {
   color: #000;
   padding: 0.2em 0;
 }
-
+/* #endregion */
 /* ==========================================================================
     Fonts
     ========================================================================== */
@@ -297,13 +299,9 @@ nav .navigation {
   padding: 3rem;
 }
 
-/* Medium screens */
-@media all and (max-width: 800px) {
-  .navigation ul {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
-    justify-content: space-around;
-  }
-}
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   ========================================================================== */
 
 /* Small screens */
 @media all and (max-width: 500px) {
@@ -331,10 +329,10 @@ nav .navigation {
   }
 }
 
-/* ==========================================================================
-   Media Queries for Responsive Design.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .navigation ul {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
 }
