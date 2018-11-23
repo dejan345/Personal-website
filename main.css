@@ -205,6 +205,27 @@ template {
 /* ==========================================================================
    Custom styles
    ========================================================================== */
+/* Chrome/Firefox native smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+a:active,
+a:focus {
+  outline: 0;
+  border: none;
+  outline-style: none;
+  -moz-outline-style: none;
+}
+
+p::-moz-selection {
+  color: #fff;
+  background-color: #ff4648;
+}
+p::selection {
+  color: #fff;
+  background-color: #ff4648;
+}
 
 body {
   background-color: #1c1c23;
@@ -220,7 +241,8 @@ h1 {
 
 p {
   font-family: "Roboto Slab", serif;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
+  line-height: 1.7;
   font-weight: 300;
 }
 /* ==========================================================================
@@ -229,6 +251,11 @@ p {
 
 .hello {
   font-size: 3.5rem;
+}
+
+nav {
+  grid-auto-columns: 1fr;
+  padding: 1rem 3rem;
 }
 
 nav .navigation {
@@ -263,6 +290,13 @@ nav .navigation {
   background-color: #e0e0e0 !important;
 }
 
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  padding: 3rem;
+}
+
 /* Medium screens */
 @media all and (max-width: 800px) {
   .navigation ul {
@@ -276,6 +310,24 @@ nav .navigation {
   .navigation ul {
     /* On small screens, we are no longer using row direction but column */
     flex-direction: column;
+  }
+
+  nav {
+    grid-auto-columns: 1fr;
+    padding: 0;
+  }
+
+  .main {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  p {
+    font-size: 1rem;
   }
 }
 
