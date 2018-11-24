@@ -204,6 +204,8 @@ template {
 /* @import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700"); */
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Serif+Pro:400,700");
 
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i");
+
 /* ==========================================================================
    Custom styles
    ========================================================================== */
@@ -230,6 +232,9 @@ p::selection {
 }
 
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   background-color: #1c1c23;
   background-image: url("/images/noisy-texture3.png");
   color: #e0e0e0;
@@ -237,13 +242,14 @@ body {
 
 h1 {
   color: #f9d05c;
-  font-weight: 400;
-  font-family: "Source Serif Pro", serif;
+  font-weight: 700;
+  /* font-family: "Source Serif Pro", serif; */
+  font-family: "PT Serif", serif;
 }
 
 p {
   font-family: "Roboto Slab", serif;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   font-weight: 300;
 }
@@ -252,7 +258,7 @@ p {
     ========================================================================== */
 
 .hello {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
 }
 
 nav {
