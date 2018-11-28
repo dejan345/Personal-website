@@ -232,8 +232,6 @@ p::selection {
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   background-color: #1c1c23;
   background-image: url("/images/noisy-texture3.png");
@@ -249,9 +247,15 @@ h1 {
 
 p {
   font-family: "Roboto Slab", serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.7;
   font-weight: 300;
+}
+
+.main-wrapper {
+  max-width: 1920px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 /* ==========================================================================
     Home page
@@ -261,6 +265,9 @@ p {
   font-size: 3.2rem;
 }
 
+.navigation {
+  grid-column: 1 / -1;
+}
 nav {
   grid-auto-columns: 1fr;
   padding: 1rem 3rem;
@@ -300,9 +307,16 @@ nav .navigation {
 
 .main {
   display: grid;
+  grid-column: 1 / -1;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   padding: 3rem;
+}
+
+.hi {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #626264;
 }
 
 /* ==========================================================================
