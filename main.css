@@ -266,9 +266,14 @@ p {
   font-size: 3.2rem;
 }
 
+header {
+  grid-column: 1 / -1;
+}
+
 .navigation {
   grid-column: 1 / -1;
 }
+
 nav {
   grid-auto-columns: 1fr;
   padding: 1rem 3rem;
