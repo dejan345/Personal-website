@@ -386,11 +386,12 @@ nav .navigation {
   top: 0;
   left: 0;
   z-index: -1;
-  overflow: hidden;
 }
 
 main.main {
   overflow: hidden;
+  position: relative;
+  min-height: 100vh;
   /* position: relative; */
   /* put this after you add content in pages to avoid horizontal scroll */
 }
