@@ -263,7 +263,12 @@ p {
     ========================================================================== */
 
 .hello {
-  font-size: 3.2rem;
+  /* font-size: 3.2rem; */
+  font-size: calc((5vh + 5.5vw) / 2) !important;
+  /* background: linear-gradient(to right, #ff1b68 0%, #fe4c42 100%); */
+  /* background-clip: text; */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
 }
 
 header {
