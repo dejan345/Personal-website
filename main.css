@@ -308,14 +308,11 @@ nav .navigation {
   text-decoration: none;
 }
 
-.navigation ul li a:active {
-  color: #f9d05c;
-  text-transform: uppercase;
-  border-bottom: 5px solid #f9d05c;
-  text-decoration: #f9d05c;
-  background-color: #e0e0e0 !important;
+nav.navigation ul li.active-page a {
+  color: #f7e8bf;
+  padding-bottom: 0.1em;
+  border-bottom: 2px solid rgb(243, 126, 126);
 }
-
 .main,
 .description {
   display: grid;
