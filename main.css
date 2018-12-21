@@ -276,16 +276,12 @@ header {
   grid-column: 1 / -1;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
-  padding: 3rem 3rem 0 3rem;
+  padding: 1rem 3rem 0 3rem;
 }
 
-/* .navigation {
-  grid-column: 1 / -1;
-} */
 
 nav {
   grid-auto-columns: 1fr;
-  padding: 1rem 3rem;
 }
 
 nav .navigation {
