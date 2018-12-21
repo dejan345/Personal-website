@@ -259,8 +259,8 @@ p {
   grid-template-columns: 1fr 1fr;
 }
 /* ==========================================================================
-    Home page
-    ========================================================================== */
+Home page
+========================================================================== */
 
 .hello {
   /* font-size: 3.2rem; */
@@ -272,12 +272,16 @@ p {
 }
 
 header {
+  display: grid;
   grid-column: 1 / -1;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  padding: 3rem 3rem 0 3rem;
 }
 
-.navigation {
+/* .navigation {
   grid-column: 1 / -1;
-}
+} */
 
 nav {
   grid-auto-columns: 1fr;
