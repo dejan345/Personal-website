@@ -264,7 +264,7 @@ Home page
 
 .hello {
   /* font-size: 3.2rem; */
-  font-size: calc((5vh + 5.5vw) / 2) !important;
+  font-size: calc((5vh + 4.5vw) / 2) !important;
   /* background: linear-gradient(to right, #ff1b68 0%, #fe4c42 100%); */
   /* background-clip: text; */
   /* -webkit-background-clip: text; */
@@ -278,7 +278,6 @@ header {
   grid-gap: 1rem;
   padding: 1rem 3rem 0 3rem;
 }
-
 
 nav {
   grid-auto-columns: 1fr;
@@ -313,6 +312,11 @@ nav.navigation ul li.active-page a {
   padding-bottom: 0.1em;
   border-bottom: 2px solid rgb(243, 126, 126);
 }
+
+.main-right img {
+  width: 100%;
+}
+
 .main,
 .description {
   display: grid;
@@ -332,7 +336,7 @@ nav.navigation ul li.active-page a {
   /* transform: skewY(-4deg); */
   transform-origin: 0;
   overflow: hidden;
-  padding: 3rem;
+  padding: 1rem 3rem 3rem 3rem;
   /* clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%); */
   /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
   -webkit-clip-path: polygon(0 14%, 100% 0, 100% 89%, 0% 100%);
@@ -644,48 +648,3 @@ label {
 }
 
 /* Playground */
-
-.link {
-  outline: none;
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
-}
-
-.link--playground {
-  font-weight: 900;
-  overflow: hidden;
-}
-
-.link--playground::after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  width: 100%;
-  top: 50%;
-  margin-top: -8px;
-  right: 0;
-  background: #f9f9f9;
-  transform: translate3d(-100%, 0, 0);
-  transition: transform 0.4s;
-  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-}
-
-.link--playground:hover::after {
-  transform: translate3d(100%, 0, 0);
-}
-
-.link--playground::before {
-  content: attr(data-letters);
-  position: absolute;
-  z-index: 2;
-  overflow: hidden;
-  color: #edf05a;
-  white-space: nowrap;
-  width: 0%;
-  transition: width 0.4s 0.3s;
-}
-
-.link--playground:hover::before {
-  width: 100%;
-}
