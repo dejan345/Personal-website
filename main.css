@@ -237,6 +237,7 @@ body {
   background-color: #1c1c23;
   background-image: url("/images/noisy-texture3.png");
   color: #e0e0e0;
+  font-size: 62.5%;
 }
 
 h1 {
@@ -281,6 +282,7 @@ header {
 
 nav {
   grid-auto-columns: 1fr;
+  font-size: 0.9rem;
 }
 
 nav .navigation {
@@ -385,7 +387,7 @@ nav.navigation ul li.active-page a {
 .background-text {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 500px;
+  font-size: 100vh;
   font-weight: 700;
   color: #2a2a33;
   position: absolute;
@@ -405,6 +407,7 @@ main.main {
 .availability {
   grid-column: -1 / 1;
   padding: 3rem;
+  font-size: 1rem;
 }
 
 .availability span {
@@ -483,7 +486,6 @@ label {
   color: #6a7989;
   font-weight: bold;
   font-size: 70.25%;
-  font-size: 90%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-touch-callout: none;
@@ -524,7 +526,7 @@ label {
   background: transparent;
   color: #9da8b2;
   color: rgb(249, 208, 92);
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .input__label--nao {
